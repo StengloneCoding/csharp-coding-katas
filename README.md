@@ -28,6 +28,7 @@ Eine Sammlung klassischer Coding-Katas, implementiert in **C#** mit **xUnit Test
 
 Die Solution ist in das Logik-Projekt (CodingKatas) und das Test-Projekt (CodingKatas.Tests) unterteilt:
 
+```text
 csharp-coding-katas
 ├── CodingKatas
 │   ├── Arrays
@@ -47,6 +48,7 @@ csharp-coding-katas
         ├── AnagramTests.cs
         ├── FirstUniqueCharacterTests.cs
         └── PalindromeTests.cs
+ ```
 
 ---
 
