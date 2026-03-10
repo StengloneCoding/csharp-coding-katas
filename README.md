@@ -1,32 +1,33 @@
 # C# Coding Katas
 
-Eine Sammlung klassischer Coding-Katas, implementiert in **C#** mit **xUnit Tests**. Dieses Repository dient dem Training von algorithmischem Problemlösen, Clean Code und Test-Driven Development (TDD).
+A collection of classic coding katas implemented in **C#** with **xUnit tests**.  
+This repository is intended for practicing algorithmic problem-solving, Clean Code principles and Test-Driven Development (TDD).
 
 ---
 
 ## 🛠 Tech Stack
 
-* **Sprache:** C#
-* **Framework:** .NET 9.0
-* **Testing:** xUnit
+- **Language:** C#
+- **Framework:** .NET 9.0
+- **Testing:** xUnit
 
 ---
 
-## 🧩 Implementierte Katas
+## 🧩 Implemented Katas
 
-| Kategorie | Kata | Test-Status |
+| Category | Kata | Test Status |
 | :--- | :--- | :--- |
-| **Basics** | FizzBuzz | ✅ Bestanden |
-| **Strings** | Anagram | ✅ Bestanden |
-| **Strings** | First Unique Character | ✅ Bestanden |
-| **Strings** | Palindrome | ✅ Bestanden |
-| **Arrays** | Two Sum | ✅ Bestanden |
+| **Basics** | FizzBuzz | ✅ Passed |
+| **Strings** | Anagram | ✅ Passed |
+| **Strings** | First Unique Character | ✅ Passed |
+| **Strings** | Palindrome | ✅ Passed |
+| **Arrays** | Two Sum | ✅ Passed |
 
 ---
 
-## 📂 Projektstruktur
+## 📂 Project Structure
 
-Die Solution ist in das Logik-Projekt (CodingKatas) und das Test-Projekt (CodingKatas.Tests) unterteilt:
+The solution is separated into the logic project (**CodingKatas**) and the test project (**CodingKatas.Tests**):
 
 ```text
 csharp-coding-katas
@@ -48,25 +49,25 @@ csharp-coding-katas
         ├── AnagramTests.cs
         ├── FirstUniqueCharacterTests.cs
         └── PalindromeTests.cs
- ```
+```
 
 ---
 
-## 🚀 Ausführung
+## 🚀 Running the Tests
 
-Um alle Tests in der Konsole auszuführen, nutze folgenden Befehl im Hauptverzeichnis:
+To run all tests from the command line, execute the following command in the root directory:
 
+```bash
 dotnet test
+```
 
-Alternativ können die Tests direkt über den Test-Explorer in Visual Studio gestartet werden.
-
----
-
-## 🎯 Lernziele
-
-* **Problem Solving:** Komplexe Aufgaben in kleine, testbare Schritte zerlegen.
-* **TDD:** Entwicklung nach dem "Red-Green-Refactor"-Prinzip.
-* **Clean Code:** Fokus auf Lesbarkeit und Wartbarkeit des Codes.
-* **Data-Driven Testing:** Konsequente Nutzung von xUnit **[Theory]** und **[InlineData]**, um Logik mit verschiedenen Eingabewerten effizient zu validieren.
+Alternatively, tests can be run directly via the **Test Explorer** in Visual Studio.
 
 ---
+
+## 🎯 Learning Goals
+
+- **Problem Solving:** Break complex problems into small, testable steps.
+- **TDD:** Follow the *Red–Green–Refactor* development cycle.
+- **Clean Code:** Focus on readability and maintainability.
+- **Data-Driven Testing:** Consistent use of xUnit **[Theory]** and **[InlineData]** to efficiently validate logic with multiple input values.
