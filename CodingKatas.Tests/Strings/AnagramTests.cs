@@ -6,11 +6,14 @@ public class AnagramTests
     [Theory]
     [InlineData("rail safety", "fairy tales", true)]
     [InlineData("sorry", "not sorry", false)]
-    public void IsAnagramm_ReturnsBool(string a, string b, bool expected)
+    [InlineData("abc", "ab", false)]
+    [InlineData("listen", "listen", true)]
+    [InlineData("", "", true)]
+    public void IsAnagramm_ReturnsExpectedResult(string a, string b, bool expected)
     {
-        Anagram anagramm = new Anagram();
-        bool result = anagramm.IsAnagram(a, b);
-        Assert.Equal(result, expected);
+        Anagram anagram = new Anagram();
+        bool result = anagram.IsAnagram(a, b);
+        Assert.Equal(expected, result);
     }
 
 }
