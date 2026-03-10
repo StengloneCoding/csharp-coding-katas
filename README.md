@@ -1,5 +1,7 @@
 # C# Coding Katas
 
+![Build and Test](https://github.com/StengloneCoding/csharp-coding-katas/actions/workflows/dotnet.yml/badge.svg)
+
 A collection of classic coding katas implemented in **C#** with **xUnit tests**.  
 This repository is intended for practicing algorithmic problem-solving, Clean Code principles and Test-Driven Development (TDD).
 
