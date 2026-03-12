@@ -5,7 +5,7 @@ public class Palindrome
     {
         if (string.IsNullOrEmpty(text)) return false;
         
-        string reversedText = new string(text.Reverse().ToArray());
+        string reversedText = new(text.Reverse().ToArray());
 
         return text.Equals(reversedText, StringComparison.OrdinalIgnoreCase);
 

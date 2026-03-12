@@ -1,18 +1,16 @@
-﻿namespace CodingKatas.Strings;
+﻿using System.Diagnostics.Metrics;
+
+namespace CodingKatas.Strings;
 public class FirstUniqueCharacter
 {
     public char GetFirstUniqueCharacter(string text)
     {
         if (string.IsNullOrEmpty(text)) return '\0';
 
-        Dictionary<char, int> charCountPairs = new Dictionary<char, int>();
+        Dictionary<char, int> charCountPairs = [];
         foreach (char c in text)
         {
-            if (!charCountPairs.ContainsKey(c))
-            {
-                charCountPairs[c] = 0;
-            }
-            charCountPairs[c]++;
+            charCountPairs[c] = charCountPairs.GetValueOrDefault(c) + 1;
 
         }
 

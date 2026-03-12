@@ -11,7 +11,7 @@ public class AnagramTests
     [InlineData("", "", true)]
     public void IsAnagramm_ReturnsExpectedResult(string a, string b, bool expected)
     {
-        Anagram anagram = new Anagram();
+        Anagram anagram = new();
         bool result = anagram.IsAnagram(a, b);
         Assert.Equal(expected, result);
     }

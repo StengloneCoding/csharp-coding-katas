@@ -7,11 +7,11 @@ public class PalindromeTests
     [InlineData("", false)]
     [InlineData("Bastian", false)]
     [InlineData("Anna", true)]
-    public void IsPalindrome_ReturnsBool(string input, bool expected)
+    public void IsPalindrome_ReturnsExpectedResult(string input, bool expected)
     {
-        var palindrome = new Palindrome();
+        Palindrome palindrome = new();
 
-        var result = palindrome.IsPalindrome(input);
+        bool result = palindrome.IsPalindrome(input);
 
         Assert.Equal(expected, result);
     }

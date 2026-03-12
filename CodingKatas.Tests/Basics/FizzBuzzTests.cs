@@ -11,9 +11,9 @@ public class FizzBuzzTests
     [InlineData(15, "FizzBuzz")]
     public void GetFizzBuzz_ReturnsExpectedValue(int input, string expected)
     {
-        var fizzbuzz = new FizzBuzz();
+        FizzBuzz fizzbuzz = new();
 
-        var result = fizzbuzz.GetFizzBuzzNumber(input);
+        string result = fizzbuzz.GetFizzBuzzNumber(input);
 
         Assert.Equal(expected, result);
     }
