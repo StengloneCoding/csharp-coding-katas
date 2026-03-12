@@ -22,8 +22,12 @@ This repository is intended for practicing algorithmic problem-solving, Clean Co
 | **Basics** | FizzBuzz | ✅ Passed |
 | **Strings** | Anagram | ✅ Passed |
 | **Strings** | First Unique Character | ✅ Passed |
+| **Strings** | Group Anagrams | ✅ Passed |
+| **Strings** | Longest Substring Without Repeating Characters | ✅ Passed |
 | **Strings** | Palindrome | ✅ Passed |
+| **Strings** | Valid Parentheses | ✅ Passed |
 | **Arrays** | Two Sum | ✅ Passed |
+| **Arrays** | Top K Frequent Elements | ✅ Passed |
 
 ---
 
@@ -35,22 +39,30 @@ The solution is separated into the logic project (**CodingKatas**) and the test 
 csharp-coding-katas
 ├── CodingKatas
 │   ├── Arrays
+│   │   ├── TopKFrequent.cs
 │   │   └── TwoSum.cs
 │   ├── Basics
 │   │   └── FizzBuzz.cs
 │   └── Strings
 │       ├── Anagram.cs
 │       ├── FirstUniqueCharacter.cs
-│       └── Palindrome.cs
+│       ├── GroupAnagrams.cs
+│       ├── LongestSubstringWithoutRepeatingCharacters.cs
+│       ├── Palindrome.cs
+│       └── ValidParentheses.cs
 └── CodingKatas.Tests
     ├── Arrays
+    │   ├── TopKFrequentTests.cs
     │   └── TwoSumTests.cs
     ├── Basics
     │   └── FizzBuzzTests.cs
     └── Strings
         ├── AnagramTests.cs
         ├── FirstUniqueCharacterTests.cs
-        └── PalindromeTests.cs
+        ├── GroupAnagramsTests.cs
+        ├── LongestSubstringWithoutRepeatingCharactersTests.cs
+        ├── PalindromeTests.cs
+        └── ValidParenthesesTests.cs
 ```
 
 ---
