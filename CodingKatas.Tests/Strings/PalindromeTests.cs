@@ -7,7 +7,7 @@ public class PalindromeTests
     [InlineData("", false)]
     [InlineData("Bastian", false)]
     [InlineData("Anna", true)]
-    public void IsPalindrome_ReturnsExpectedResult(string input, bool expected)
+    public void IsPalindrome_ReturnsTrueForPalindromesAndFalseOtherwise(string input, bool expected)
     {
         Palindrome palindrome = new();
 

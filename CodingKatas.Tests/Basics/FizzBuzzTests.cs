@@ -9,7 +9,7 @@ public class FizzBuzzTests
     [InlineData(3, "Fizz")]
     [InlineData(5, "Buzz")]
     [InlineData(15, "FizzBuzz")]
-    public void GetFizzBuzz_ReturnsExpectedValue(int input, string expected)
+    public void GetFizzBuzzNumber_ReturnsFizzBuzzValueForInput(int input, string expected)
     {
         FizzBuzz fizzbuzz = new();
 

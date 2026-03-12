@@ -11,7 +11,7 @@ public class FirstUniqueCharacterTests
     [InlineData("aabbcd", 'c')]
     [InlineData("aabbcc", '\0')]
     [InlineData("", '\0')]
-    public void GetFirstUniqueCharacter_ReturnsExpectedResult(string input, char expected)
+    public void GetFirstUniqueCharacter_ReturnsFirstNonRepeatingCharacter(string input, char expected)
     {
         FirstUniqueCharacter firstUniqueCharacter = new();
 

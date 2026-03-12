@@ -9,7 +9,7 @@ public class AnagramTests
     [InlineData("abc", "ab", false)]
     [InlineData("listen", "listen", true)]
     [InlineData("", "", true)]
-    public void IsAnagramm_ReturnsExpectedResult(string a, string b, bool expected)
+    public void IsAnagram_ReturnsTrueForValidAnagramsAndFalseOtherwise(string a, string b, bool expected)
     {
         Anagram anagram = new();
         bool result = anagram.IsAnagram(a, b);

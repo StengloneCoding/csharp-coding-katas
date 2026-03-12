@@ -5,7 +5,7 @@ namespace CodingKatas.Tests.Strings;
 public class GroupAnagramsTests
 {
     [Fact]
-    public void GetGroupAnagrams_ReturnsCorrectGroups()
+    public void GetGroupAnagrams_ReturnsExpectedNumberOfGroups()
     {
         var input = new[] { "eat", "tea", "tan", "ate", "nat", "bat" };
 

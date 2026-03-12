@@ -10,7 +10,7 @@ public class LongestSubstringWithoutRepeatingCharactersTests
     [InlineData("pwwkew", 3)]
     [InlineData("", 0)]
     [InlineData("abcdef", 6)]
-    public void GetLengthOfLongestSubstring_ReturnsExpectedResult(string input, int expected)
+    public void GetLengthOfLongestSubstring_ReturnsLongestUniqueSubstringLength(string input, int expected)
     {
         LongestSubstringWithoutRepeatingCharacters longestSubstringWithoutRepeatingCharacters = new();
 

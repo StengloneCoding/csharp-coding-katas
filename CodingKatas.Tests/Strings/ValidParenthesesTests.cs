@@ -8,7 +8,7 @@ public class ValidParenthesesTests
     [InlineData("(]", false)]
     [InlineData("([)]", false)]
     [InlineData("{[]}", true)]
-    public void IsValid_ReturnsExpectedResult(string input, bool expected)
+    public void IsValid_ReturnsTrueForBalancedParenthesesAndFalseOtherwise(string input, bool expected)
     {
         ValidParentheses validParantheses = new();
 
