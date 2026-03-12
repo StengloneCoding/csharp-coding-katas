@@ -10,7 +10,7 @@ This repository is intended for practicing algorithmic problem-solving, Clean Co
 ## 🛠 Tech Stack
 
 - **Language:** C#
-- **Framework:** .NET 9.0
+- **Framework:** .NET 10.0
 - **Testing:** xUnit
 
 ---
