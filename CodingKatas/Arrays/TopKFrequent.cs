@@ -10,6 +10,6 @@ public class TopKFrequent
         {
             countedNumbers[number] = countedNumbers.GetValueOrDefault(number) + 1;
         }
-        return countedNumbers.OrderByDescending(x => x.Key).Take(k).Select(x => x.Value).ToArray();
+        return countedNumbers.OrderByDescending(x => x.Value).Take(k).Select(x => x.Key).ToArray();
     }
 }
