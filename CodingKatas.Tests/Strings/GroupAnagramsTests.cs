@@ -4,14 +4,18 @@ namespace CodingKatas.Tests.Strings;
 
 public class GroupAnagramsTests
 {
-    [Fact]
-    public void GetGroupAnagrams_ReturnsExpectedNumberOfGroups()
+    [Theory]
+    [InlineData(new[] { "eat", "tea", "tan", "ate", "nat", "bat" }, 3)]
+    [InlineData(new[] { "abc", "bca", "cab" }, 1)]
+    [InlineData(new[] { "abc", "def", "ghi" }, 3)]
+    [InlineData(new[] { "a" }, 1)]
+    [InlineData(new string[] { }, 0)]
+    public void GetGroupAnagrams_ReturnsExpectedNumberOfGroups(string[] input, int expectedGroupCount)
     {
-        var input = new[] { "eat", "tea", "tan", "ate", "nat", "bat" };
-
         var groupAnagrams = new GroupAnagrams();
+
         var result = groupAnagrams.GetGroupAnagrams(input);
 
-        Assert.Equal(3, result.Count);
+        Assert.Equal(expectedGroupCount, result.Count);
     }
 }
